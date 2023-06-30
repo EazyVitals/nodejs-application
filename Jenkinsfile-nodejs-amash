@@ -21,7 +21,7 @@ node{
     stage('UploadArtifacts'){
     sh "echo npm packages uploaded"
     nodejs(nodeJSInstallationName: 'nodejs17') {
-        sh 'npm publish'
+        // sh 'npm publish'
         // Jenkins nexus intergration 
         // password = admin123  username = admin 
         // echo -n 'admin:admin123' | openssl base64
